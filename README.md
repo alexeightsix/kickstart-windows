@@ -1,5 +1,7 @@
 # Windows reinstall runbook
 
+![Desktop wallpaper](snapshot/desktop/wallpaper.jpg)
+
 Snapshot from November 18, 2026. Restore the desktop and audio workflow in the order below. The [inventory](snapshot/inventory/) records installed apps, Store packages, plug-in files and drivers. It includes Windows components, redistributables and vendor helpers. Use it as a reference when deciding what to reinstall.
 
 ## Index
@@ -7,7 +9,7 @@ Snapshot from November 18, 2026. Restore the desktop and audio workflow in the o
 1. [Windows, motherboard, graphics and RGB](#1-windows-motherboard-graphics-and-rgb)
 2. [Focusrite Scarlett Solo and DAWs](#2-focusrite-scarlett-solo-and-daws)
 3. [Plug-ins and libraries](#3-plug-ins-and-libraries)
-4. [Desktop workflow](#4-desktop-workflow): apps (Git, AutoHotkey, Vicinae, Flameshot, Tailscale, Claude, ChatGPT, GitHub Desktop, Herdr, File Pilot), wallpaper, power, hotkeys, virtual desktops, taskbar, Caps Lock
+4. [Desktop workflow](#4-desktop-workflow): apps (Git, AutoHotkey, Vicinae, Flameshot, Tailscale, Claude, ChatGPT, GitHub Desktop, Herdr, Rex, File Pilot), wallpaper, power, hotkeys, virtual desktops, taskbar, Caps Lock
 5. [Final check](#final-check)
 
 ## 1. Windows, motherboard, graphics and RGB
@@ -72,6 +74,7 @@ powershell -c "irm https://releases.herdr.dev/app/install.ps1 | iex"
 - **Taskbar.** Use **Settings → Personalization → Taskbar → Taskbar behaviors → Taskbar position → Left** for a vertical bar. Search was hidden, Task View on, Widgets and Resume off. [Microsoft taskbar instructions](https://support.microsoft.com/en-us/windows/experience/personalization/customize-the-taskbar-in-windows)
 - **Claude Desktop and ChatGPT Desktop.** Both were installed through WinGet: Claude **6.28899.6** (`Anthropic.Claude`) and ChatGPT **26.1111.2228.0** (`OpenAI.ChatGPT`). Sign in to each after installing. ChatGPT is routed to virtual desktop 4 (see below). Claude Code sessions use the Claude Desktop Code tab.
 - **GitHub Desktop.** Installed November 27, 2026 (`GitHub.GitHubDesktop`, 3.7.1). Sign in, then **File → Clone repository** to bring this runbook back as `kickstart-windows`.
+- **Rex (Superlogical).** Installed as **0.1.1-preview.41**, per-user in `%LOCALAPPDATA%\Superlogical\Rex`. The Windows app is in beta and only available to enrolled testers; enrollment instructions are on Superlogical's Discord. Download the latest preview installer, [latest.exe](https://blob.superlogical.com/download/rex-win32/preview/latest.exe), from the [Rex installation docs](https://www.superlogical.com/rex/docs/installation). It needs Windows 10 1809 or newer. It isn't on WinGet. For the server only, see [Rex Server for Windows](https://www.superlogical.com/rex/docs/windows/installation).
 - **Wallpaper.** Restore [snapshot/desktop/wallpaper.jpg](snapshot/desktop/wallpaper.jpg) (the Nine Inch Nails image, originally set through the Photos app). Copy it somewhere permanent, such as `%USERPROFILE%\Pictures\wallpaper.jpg`, then right-click it → **Set as desktop background** or use **Settings → Personalization → Background → Picture**. The fit was **Fill** (`WallpaperStyle` 10, `TileWallpaper` 0).
 - **Power.** The active plan was **High performance** (no battery). Settings were: display off after **10 min**, sleep after **30 min**, hibernate **never**, hybrid sleep **on**, wake timers **enabled**, hard disk off after **20 min**, minimum processor state **0%**, maximum **100%**, PCIe link state power management **off**, fast startup **on**. To reapply from an admin terminal:
 
