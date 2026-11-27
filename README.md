@@ -2,6 +2,14 @@
 
 Snapshot from November 18, 2026. Restore the desktop and audio workflow in the order below. The [inventory](snapshot/inventory/) records installed apps, Store packages, plug-in files and drivers. It includes Windows components, redistributables and vendor helpers. Use it as a reference when deciding what to reinstall.
 
+## Index
+
+1. [Windows, motherboard, graphics and RGB](#1-windows-motherboard-graphics-and-rgb)
+2. [Focusrite Scarlett Solo and DAWs](#2-focusrite-scarlett-solo-and-daws)
+3. [Plug-ins and libraries](#3-plug-ins-and-libraries)
+4. [Desktop workflow](#4-desktop-workflow): apps (Git, AutoHotkey, Vicinae, Flameshot, Tailscale, Claude, ChatGPT, GitHub Desktop, Herdr, File Pilot), wallpaper, power, hotkeys, virtual desktops, taskbar, Caps Lock
+5. [Final check](#final-check)
+
 ## 1. Windows, motherboard, graphics and RGB
 
 1. Install the latest Windows 11 x64 updates. The native vertical taskbar setting may depend on the build.
