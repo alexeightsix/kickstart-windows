@@ -1,0 +1,11 @@
+# Drivers
+
+Third-party drivers for the audio interface and GPU as of November 18, 2026.
+
+| Device | Provider | Version | INF |
+| --- | --- | --- | --- |
+| Focusrite Thunderbolt Audio Root | Focusrite Audio Engineering, Ltd. | 4.143.0.261 | oem87.inf |
+| Focusrite Audio Hardware device driver | Focusrite Audio Engineering, Ltd. | 4.143.0.261 | oem87.inf |
+| Radeon RX 570 Series | Advanced Micro Devices, Inc. | 31.0.21923.1000 | oem29.inf |
+| Focusrite USB Audio | Focusrite Audio Engineering, Ltd. | 4.143.0.261 | oem86.inf |
+| Focusrite USB Audio Root | Focusrite Audio Engineering, Ltd. | 4.143.0.261 | oem87.inf |

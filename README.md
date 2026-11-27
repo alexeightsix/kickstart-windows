@@ -2,7 +2,7 @@
 
 ![Desktop wallpaper](snapshot/desktop/wallpaper.jpg)
 
-Snapshot from November 18, 2026. Restore the desktop and audio workflow in the order below. The [inventory](snapshot/inventory/) records installed apps, Store packages, plug-in files and drivers. It includes Windows components, redistributables and vendor helpers. Use it as a reference when deciding what to reinstall.
+Snapshot from November 18, 2026. Restore the desktop and audio workflow in the order below. The inventory records [desktop apps](snapshot/inventory/desktop-apps.md), [Store packages](snapshot/inventory/store-packages.md), [plug-in files](snapshot/inventory/plugins.md) and [drivers](snapshot/inventory/drivers.md), with apps that come with Windows left out. Runtimes, SDKs and vendor helpers are still listed. The raw [WinGet list](snapshot/inventory/winget-list.txt) is unfiltered. Use them as a reference when deciding what to reinstall.
 
 ## Index
 
@@ -43,7 +43,7 @@ Install the latest releases through vendor accounts or installers and restore li
 | Splice | Live integration. Reconnect account and download user content if used. |
 | Audio Assault Amp Locker | **Missing from scanned plug-in roots.** Live explicitly failed to restore it in `beat3.als`. Its installer was found at `Documents\Codex\2026-11-14\is-t\outputs\AmpLockerWin.exe`. Preserve or obtain the official installer, install VST3, restore `Public\Documents\Audio Assault\AmpLockerData` if needed and confirm the original project loads the instance. |
  
-Open copies of important Live sets and older DAW sessions. Verify audio and samples, plug-in authorization, and preset recall. Save over originals only after verification. If the `beat3.als` mixer crash recurs, preserve the original and verify on a separate copy. The archive’s plug-in CSV is a file inventory from standard and known application-specific paths. It cannot identify unavailable drives, lost downloads, purchase entitlements or plug-ins in unknown folders.
+Open copies of important Live sets and older DAW sessions. Verify audio and samples, plug-in authorization, and preset recall. Save over originals only after verification. If the `beat3.als` mixer crash recurs, preserve the original and verify on a separate copy. The [plug-in list](snapshot/inventory/plugins.md) is a file inventory from standard and known application-specific paths. It cannot identify unavailable drives, lost downloads, purchase entitlements or plug-ins in unknown folders.
 
 ## 4. Desktop workflow
 
