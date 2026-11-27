@@ -10,7 +10,6 @@ Snapshot from November 18, 2026. Restore the desktop and audio workflow in the o
 2. [Focusrite Scarlett Solo and DAWs](#2-focusrite-scarlett-solo-and-daws)
 3. [Plug-ins and libraries](#3-plug-ins-and-libraries)
 4. [Desktop workflow](#4-desktop-workflow): apps (Git, AutoHotkey, Vicinae, Flameshot, Tailscale, Claude, ChatGPT, GitHub Desktop, Herdr, Rex, File Pilot), wallpaper, power, hotkeys, virtual desktops, taskbar, Caps Lock
-5. [Final check](#final-check)
 
 ## 1. Windows, motherboard, graphics and RGB
 
@@ -89,10 +88,3 @@ powershell -c "irm https://releases.herdr.dev/app/install.ps1 | iex"
 - **Caps Lock → Escape.** The live HKLM Scancode Map was `00000000000000000200000001003A0000000000`. Use the included earlier PowerShell script with admin access after saving work. It merges an existing keyboard map and restarts immediately. Review differences first if the destination uses other remaps.
 - **Herdr Desktop.** Added November 27, 2026, after this snapshot. It runs coding agents (Claude Code, Codex) in persistent terminals. Install with the official script above. It verifies the download's SHA-256, installs the app to `%LOCALAPPDATA%\Programs\herdr-app` (on PATH as `herdr-app`) with a **Herdr** Start menu entry, and installs herdr-core (`hc`) to `%LOCALAPPDATA%\Programs\herdr-core` if it is missing. Versions installed were app **0.1.18** and `hc` **0.1.22**. Windows support is beta and the binary is unsigned, so SmartScreen may warn on first launch (**More info → Run anyway**). Re-run the script to update. The WinGet package `Herdr.Herdr` is the separate terminal (TUI) edition. Don't use the third-party `hdosys.*` or `khanhtd36.*` packages. [Herdr download](https://herdr.dev/download/) · [Windows beta notes](https://herdr.dev/docs/preview/windows-beta/)
 - **Tailscale.** Added November 27, 2026, after this snapshot. Install with WinGet above (MSI from `pkgs.tailscale.com`, version **1.104.7** at the time). The `Tailscale` service should be **Running / Automatic**. Sign in from the tray icon or with `tailscale up`, then confirm this PC appears in the admin console with its expected name. [Tailscale download](https://tailscale.com/download)
-
-## Final check
-
-Confirm the Radeon driver and display, FURY CTRL and RAM lighting, Scarlett input and output in Live, MIDI, plug-in recall on a copy of a real project, File Pilot folder opening, Win/F shortcuts, virtual desktop routing, the Flameshot clipboard, Herdr launching from the Start menu, Tailscale signed in and connected, Claude and ChatGPT signed in, the wallpaper and the High performance power plan. Check again after signing in to verify startup. Record any deviations and unresolved plug-ins in this repo.
-
-This audit used the live machine, relevant accessible Codex chats, and a title scan of 1,500 ChatGPT chats with selected audio conversations opened. Older ChatGPT pages were still available and were not exhaustively reviewed. Installed products, remembered suggestions and missing project dependencies are distinguished above.
-
